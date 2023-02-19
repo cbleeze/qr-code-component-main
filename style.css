@@ -1,0 +1,118 @@
+:root{
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(212, 45%, 89%);
+--Grayish-blue: hsl(220, 15%, 55%);
+--Dark-blue: hsl(218, 44%, 22%);
+--Font-size: 15px;
+--Weights: 400, 700
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Light-gray);
+  }
+  
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    
+  }
+
+
+  .card{
+    background-color: var(--White);
+    padding: 1rem;
+    border-radius: 15px;
+    width: 320px;
+  }
+
+ .first__image, img{
+    height: auto;
+    width: 320px;
+    border-radius: 15px;
+  }
+
+  .second__image{
+    height: auto;
+    width: 32px;
+    display: flex;
+    position: absolute;
+    bottom: 70%;
+    transform: translate(400%, 500%);
+    opacity: 0.0;
+  }
+
+  h1{
+    font-size:21px;
+    padding-left: 1em;
+    padding-top: 1em;
+    line-height: 1.333em;
+    color: var(--Dark-blue);
+  }
+
+  p{
+    font-size: 15px;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: var(--Grayish-blue);
+    padding-bottom: 1em;
+  }
+
+
+ .attribution{
+  position: relative;
+  bottom: 500%;
+  transform: translate(-114%, 1550%);
+  font-size: 11px;
+ }
